@@ -69,19 +69,19 @@ function keyPush(evt) {
                previousState = "left";
             }
             break;
-        case 38:
+        case 38:    // Down
             if(!pause && previousState != "up") {
                 xv = 0; yv = -1;
                 previousState = "down";
             }
             break;
-        case 39:
+        case 39:    // Right
             if(!pause && previousState != "left") {
                 xv = 1; yv = 0;
                 previousState = "right";
             }
             break;
-        case 40:
+        case 40:    // Up
             if(!pause && previousState != "down") {
                 xv = 0; yv = 1;
                 previousState = "up";
