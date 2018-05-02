@@ -14,7 +14,11 @@ xv = 1;
 yv = 0;
 trail = [];
 tail = 5;
+score = 0;
+highScore = localStorage.getItem("highScore") === null ? 0 : localStorage.getItem("highScore")
 function game() {
+    document.getElementById("highScore").innerHTML = "High Score: " + highScore + "<br />";
+    document.getElementById("score").innerHTML = "Score: "+ score + "<br />";
     oneFrameLater = true;
     if(!pause) {
         px += xv;
@@ -40,6 +44,12 @@ function game() {
         ctx.fillRect(trail[i].x*gs, trail[i].y*gs, gs-2, gs-2);
         if(trail[i].x == px && trail[i].y == py && !pause) {
             tail = 5;
+            if(score > highScore) {
+                highScore = score;
+                score = 0;
+            }
+            localStorage.setItem("score", score);
+            localStorage.setItem("highScore", highScore)
         }
     }
     if(!pause)
@@ -48,6 +58,7 @@ function game() {
         trail.shift();
     }
     if(ax == px && ay == py) {
+        score++;
         tail++;
         valid = true;
         ax = Math.floor(Math.random()*tc);
