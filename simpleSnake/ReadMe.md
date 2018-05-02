@@ -6,8 +6,7 @@
 
 ---
 
-### TO-DO
+### BUGS
 
-* Code can generate new baits on the snake's tail. I believe this is not the desired behaviour.
-
-* Normally, code does not allow you to change your direction to opposite direction. However, if you can push the key fast enough (e.g. while snake is moving to right, push the keys up and left in order), snake can move to opposite direction.
+* Scorejumps - reason is unidentified
+* New baits on tail - reason is unidentified 

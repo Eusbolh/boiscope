@@ -57,7 +57,7 @@ function game() {
     while(trail.length > tail && !pause) {
         trail.shift();
     }
-    if(ax == px && ay == py) {
+    if(ax == px && ay == py && !pause) {
         score++;
         tail++;
         valid = true;
