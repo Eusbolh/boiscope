@@ -48,6 +48,7 @@ function game() {
                 highScore = score;
                 score = 0;
             }
+            else score = 0;
             localStorage.setItem("score", score);
             localStorage.setItem("highScore", highScore)
         }

@@ -9,4 +9,5 @@
 ### BUGS
 
 * Scorejumps - reason is unidentified
+    - I think I solved the scorejump problem. It seems like the problem was not about actual scorejumps, instead the problem was about not resetting the score after a death.
 * New baits on tail - reason is unidentified 
