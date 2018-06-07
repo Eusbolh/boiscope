@@ -79,6 +79,12 @@ function game() {
 
     ctx.fillStyle = "red";
     ctx.fillRect(ax*gs, ay*gs, gs-2, gs-2);
+
+    if(pause) {
+        ctx.font = "30px Arial";
+        ctx.fillStyle = "white";
+        ctx.fillText("Paused", 150, 200);
+    }
 }
 function keyPush(evt) {
     if(oneFrameLater)
