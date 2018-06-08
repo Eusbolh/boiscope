@@ -12,7 +12,9 @@
     - I think I solved the scorejump problem. It seems like the problem was not about actual scorejumps, instead the problem was about not resetting the score after a death.
 * New baits on tail - reason is unidentified
 
+---
+
 ### Captain's Log
-[07.06] When user press the space button -which is assigned for pause-, there will be the sentence "Paused" in the middle of the game screen.
+* [07.06] When user press the space button -which is assigned for pause-, there will be the sentence "Paused" in the middle of the game screen.
     - There still exist a problem for middling the sentence, I fixed it by coordinates, but it still needs an adjustment or complete solutiion.
-[07.06] Canvas is centered. It happened with actually in a weird way. I didn't think "text-align" style method would work for this problem. Whatever.. It's solved. Maybe I can look for a better solution.
+* [07.06] Canvas is centered. It happened with actually in a weird way. I didn't think "text-align" style method would work for this problem. Whatever.. It's solved. Maybe I can look for a better solution.
