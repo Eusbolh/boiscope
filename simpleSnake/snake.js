@@ -81,9 +81,19 @@ function game() {
     ctx.fillRect(ax*gs, ay*gs, gs-2, gs-2);
 
     if(pause) {
-        ctx.font = "30px Arial";
+        // Create gradient
+        var grd = ctx.createRadialGradient(200, 200, 5, 200, 200, 200);
+        grd.addColorStop(0, "#663c00");
+        grd.addColorStop(1, "black");
+
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 190, 400, 20);
+
+        ctx.font = "12px Courier New";
         ctx.fillStyle = "white";
-        ctx.fillText("Paused", 150, 200);
+        ctx.textAlign = "center";
+        ctx.fillText("P A U S E D", 200, 205);
     }
 }
 function keyPush(evt) {

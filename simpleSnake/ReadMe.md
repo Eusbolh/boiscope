@@ -18,3 +18,4 @@
 * [07.06] When user press the space button -which is assigned for pause-, there will be the sentence "Paused" in the middle of the game screen.
     - There still exist a problem for middling the sentence, I fixed it by coordinates, but it still needs an adjustment or complete solutiion.
 * [07.06] Canvas is centered. It happened with actually in a weird way. I didn't think "text-align" style method would work for this problem. Whatever.. It's solved. Maybe I can look for a better solution.
+* [08.06] Pause text's visual is changed. I think that it much more acceptable than the previous one.
