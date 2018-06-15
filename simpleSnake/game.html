@@ -2,8 +2,21 @@
 <html>
     <script src="snake.js"></script>
     <link href="app.css" rel="stylesheet" type="text/css" media="all">
+    <head>
+        <link rel="stylesheet" href="./styles/app.css">
+        <link rel="stylesheet" href="./styles/themify-icons.css">
+    </head>
     <body>
-        <div>
+        <div class="navigation-bar">
+            <ul>
+                <li><a href="game.html" class="ti-home logo"></a></li>
+                <li><a href="game.html">homepage</a></li>
+                <li><a href="game.html">about me</a></li>
+                <li><a href="game.html">contact</a></li>
+                <li style="float:right;"><a href="game.html" class="active">LOGIN</a></li>
+            </ul>
+        </div>
+        <div class="canvas">
             <div class="canvas-center">
                 <canvas id = "gc" width = "400" height = "400" class="center"></canvas>
             </div>
@@ -11,5 +24,6 @@
                 <div id="highScore"></div>
                 <div id="score"></div>
             </div>
+        </div>
     </body>
 </html>

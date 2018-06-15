@@ -1,0 +1,74 @@
+.text-center {
+    text-align: center;
+}
+.canvas-center {
+    text-align: center;
+}
+.canvas {
+    margin-top: 50px;
+}
+
+/* Navigation Bar */
+
+.navigation-bar {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.navigation-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #191919;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navigation-bar li {
+    float: left;
+}
+
+/* ayrac denemesi
+.navigation-bar li .left {
+    box-shadow: 15.5px 0 0 -15px #cccccc;
+}
+
+.navigation-bar li .middle {
+    box-shadow: 15.5px 0 0 -15px #cccccc, -15.5px 0 0 -15px #cccccc;
+}
+
+.navigation-bar li .right {
+    box-shadow: -15.5px 0 0 -15px #cccccc;
+}
+*/
+
+.navigation-bar li a {
+    display: block;
+    color: #cccccc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation-bar li a:hover {
+    background-color: #3a494c;
+    color: white;
+}
+
+.navigation-bar .active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navigation-bar .logo {
+    padding: 10px 20px;
+    font-size: 20px;
+    display: block;
+    color: #cccccc;
+}
