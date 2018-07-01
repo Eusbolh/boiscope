@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Tw Cen MT';
+       src: url('./fonts/TCB_____.ttf') format('truetype'),
+            url('./fonts/TCBI____.ttf') format('truetype'),
+            url('./fonts/TCCB____.ttf') format('truetype'),
+            url('./fonts/TCCEB.ttf') format('truetype'),
+            url('./fonts/TCCM____.ttf') format('truetype'),
+            url('./fonts/TCM_____.ttf') format('truetype'),
+            url('./fonts/TCMI____.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.canvas-center {
+    text-align: center;
+}
