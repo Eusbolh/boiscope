@@ -1,3 +1,7 @@
+/**
+ * This code is under MIT licence, you can find the complete file at root directory.
+ */
+
 window.onload = function() {
     canv = document.getElementById("naive");
     ctx = canv.getContext("2d");
@@ -28,18 +32,18 @@ var date = "";
 date = "8 TEMMUZ";
 scale = 1;
 
-sections[1].title = "GUNDEM";
-sections[1].text = ["FACEIT Minor gruplari belli oldu. Amerika Minor 7-11 Temmuz, CIS Minor 10-13 Temmuz, Asya Minor 16-20 Temmuz, Avrupa Minor ise 19-22 Temmuz tarihlerinde oynanacak.",
-"Bu sonuclarla birlikte B.O.O.T-d[S], Liquid, mousesports ve Cloud9 turnuvaya veda etti. FaZe ve fnatic ise playoff asamasina katilmayi garantiledi."];
+sections[1].title = "GÜNDEM";
+sections[1].text = ["FACEIT Minor grupları belli oldu. Amerika Minor 7-11 Temmuz, CIS Minor 10-13 Temmuz, Asya Minor 16-20 Temmuz, Avrupa Minor ise 19-22 Temmuz tarihlerinde oynanacak.",
+"Bu sonuçlarla birlikte B.O.O.T-d[S], Liquid, mousesports ve Cloud9 turnuvaya veda etti. FaZe ve fnatic ise playoff aşamasına katılmayı garantiledi."];
 
 sections[2].title = "ESL ONE COLOGNE";
-sections[2].text = ["Turnuva icin davet alan tum takimlar aciklandi: Virtus.pro, AGO, Heroic, Space Soldiers, FaZe, G2"];
+sections[2].text = ["Turnuva için davet alan tüm takımlar açıklandı: Virtus.pro, AGO, Heroic, Space Soldiers, FaZe, G2"];
 
 sections[3].title = "DREAMHACK OPEN VALENCIA";
-sections[3].text = ["Turnuva icin davet alan son takim G2 oldu. Bununla birlikte turnuvaya katilacak takim listesi belli olmus oldu: AGO, Virtus.pro, Heroic, G2, Space Soldiers, Patates United"];
+sections[3].text = ["Turnuva için davet alan son takim G2 oldu. Bununla birlikte turnuvaya katilacak takım listesi belli olmuş oldu: AGO, Virtus.pro, Heroic, G2, Space Soldiers, Patates United"];
 
 sections[4].title = "ESEA";
-sections[4].text = ["Temsilcilerimiz ESEA turnuvalarinda bugun 4 mac oynadi. MDL'de Royal Bandits Team Fragsters'i Cache'de 16-12 yendi, Virtus.pro'ya ise Mirage'da 12-2 maglup oldu. TOA E-Sports Astralis'i Inferno'da' 16-2, Natus Vincere'i ise Nuke'te 16-1 maglup etti.","Bu sonuclarla birlikte temsilcilerimiz son durumlari su sekilde: Royal Bandits: 11W2L, TOA E-Sports: 6W-5L."];
+sections[4].text = ["Temsilcilerimiz ESEA turnuvalarında bugün 4 maç oynadı. MDL'de Royal Bandits Team Fragsters'i Cache'de 16-12 yendi, Virtus.pro'ya ise Mirage'da 12-2 maglup oldu. TOA E-Sports Astralis'i Inferno'da' 16-2, Natus Vincere'i ise Nuke'te 16-1 maglup etti.","Bu sonuçlarla birlikte temsilcilerimiz son durumları şu sekilde: Royal Bandits: 11W2L, TOA E-Sports: 6W-5L."];
 
 /* ####################################### */
 
@@ -131,14 +135,16 @@ function addHBlackLine() {
 function addTitle(title) {
     canv.style.letterSpacing = "3px";
     ctx.font = "1 14px Impact, Charcoal, sans-serif";
+    // ctx.font = "900 17px 'Tw Cen MT'";
     ctx.fillStyle = "#191919";
     ctx.textAlign = "left";
     ctx.fillText(title, 185, y);
 }
 
 function addText(text) {
-    canv.style.letterSpacing = "0.5px";
-    ctx.font = "100 17px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif";
+    canv.style.letterSpacing = "0px";
+    // ctx.font = "100 17px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif";
+    ctx.font = "1 20px 'Tw Cen MT'";
     ctx.fillStyle = "#191919";
     ctx.textAlign = "center";
     var l = text.length;

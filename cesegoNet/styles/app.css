@@ -1,16 +1,44 @@
+
+
 @font-face {
     font-family: 'Tw Cen MT';
-       src: url('./fonts/TCB_____.ttf') format('truetype'),
-            url('./fonts/TCBI____.ttf') format('truetype'),
-            url('./fonts/TCCB____.ttf') format('truetype'),
-            url('./fonts/TCCEB.ttf') format('truetype'),
-            url('./fonts/TCCM____.ttf') format('truetype'),
-            url('./fonts/TCM_____.ttf') format('truetype'),
-            url('./fonts/TCMI____.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    src: url('./../fonts/TCM_____.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('./../fonts/TCMI_____.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('./../fonts/TCB_____.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('./../fonts/TCBI_____.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Tw Cen MT Condensed";
+    src: url('./../fonts/TCCM____.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Tw Cen MT Condensed";
+    src: url('./../fonts/TCCB____.ttf') format('truetype');
+    font-weight: bold;
 }
 
 .canvas-center {
     text-align: center;
+}
+
+.font-try {
+    font-family: "Tw Cen MT";
 }
